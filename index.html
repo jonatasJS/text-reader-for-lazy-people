@@ -1,0 +1,30 @@
+<body class="m-auto text-center">
+  <select id="lang" class="lang">
+    <option value="none">Select a language</option>
+    <option value="pt-PT">European Portuguese</option>
+    <option value="pt-BR">Brazilian Portuguese</option>
+    <option value="en-US">English USA</option>
+  </select>
+  <div class="border border-purple m-4"
+       contenteditable
+       onfocus="if(this.innerText == 'Your text here') this.innerText = ''"
+       oninput="setText(event)"
+       >Your text here</div>
+  
+  <div class="volume">
+    <input type="range" min="0" max="2" step="0.5" class="m-5 rate" name="" id="rate">
+    <span id="rate-place"></span>
+    <br>
+    <input type="range" min="0" max="1" step="0.01" class="m-5 vol" name="" id="vol">
+    <span id="vol-place"></span>
+  </div>
+  
+  <button 
+    onclick="speak()"
+    class="p-4 bg-purple-200 rounded shadow">Falar</button>
+  
+  <button 
+    onclick="stop()"
+    class="p-4 bg-purple-700 text-white rounded shadow">Parar</button>
+  
+</body>
