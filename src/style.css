@@ -1,1 +1,8 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css";
+
+.divText {
+  margin-left: 30%;
+  max-width: 40%;
+  justify-content: center;
+  align-items: center;
+}
