@@ -24,7 +24,9 @@ ratePlace.innerText = utterance.rate+'x';
 function speak() {
   if(speechSynthesis.speaking) return alert('Wait to finish reading!')
   if(lang.value == 'none') return alert('Select a language!');
-    utterance.lang = lang.value;
+	if(utterance.text == '') return alert('The text field cannot be empty!');
+	
+  utterance.lang = lang.value;
 	speechSynthesis.speak(utterance);
 }
 
