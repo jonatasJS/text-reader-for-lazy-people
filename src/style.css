@@ -1,8 +1,25 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css";
 
 .divText {
+  padding: 10px;
+  height: 140px;
   margin-left: 30%;
   max-width: 40%;
   justify-content: center;
   align-items: center;
+  text-align: justify;
+  border-radius: 10px;
+  border: solid 1px black;
+  margin-top: 10px;
+}
+
+select#lang.lang {
+  padding: 5px;
+  margin: 10px;
+  border: solid 3px black;
+  border-radius: 10px;
+}
+
+select#lang.lang:focus {
+  outline: none;
 }
